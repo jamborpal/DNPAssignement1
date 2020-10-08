@@ -2,17 +2,29 @@
 
 html, body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    background-color: #a9d6ff;
+    background-color: #F3E9D2;
+
 }
 
+table, th, td {
+    border: 2px solid #114b5f;
+    text-align: center;
+    background-color: #C6DABF;
+}
+
+input {
+    background-color: #C6DABF;
+}
+
+
 a, .btn-link {
-    color: #0366d6;
+    color: #114b5f;
 }
 
 .btn-primary {
-    color: #fff;
-    background-color: #1b6ec2;
-    border-color: #1861ac;
+    color: #1A936F;
+    background-color: #114b5f;
+    border-color: #114b5f;
 }
 
 app {
@@ -32,8 +44,8 @@ app {
 }
 
 .main .top-row {
-    background-color: #f7f7f7;
-    border-bottom: 1px solid #d6d5d5;
+    background-color: #C6DABF;
+    border-bottom: 1px solid #88D498;
     justify-content: flex-end;
 }
 
@@ -48,11 +60,11 @@ app {
 }
 
 .sidebar {
-    background-color: #a7a7a7;
+    background-color: #88D498;
 }
 
 .sidebar .top-row {
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgb(17, 75, 95);
 
 }
 
@@ -82,7 +94,7 @@ app {
 }
 
 .sidebar .nav-item a {
-    color: gold;
+    color: #114b5f;
     border-radius: 4px;
     height: 3rem;
     display: flex;
@@ -92,12 +104,12 @@ app {
 
 .sidebar .nav-item a.active {
     background-color: rgba(112, 112, 112, 0.25);
-    color: #515151;
+    color: #114b5f;
 }
 
 .sidebar .nav-item a:hover {
     background-color: rgba(255, 255, 255, 0.1);
-    color: #000000;
+    color: #114b5f;
 }
 
 .content {
