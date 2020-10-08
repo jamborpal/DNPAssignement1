@@ -1,0 +1,47 @@
+[
+  {
+    "UserName": "jamborpal",
+    "Password": "12345678",
+    "Role": "Admin"
+  },
+  {
+    "UserName": "lola",
+    "Password": "3527",
+    "Role": "User"
+  },
+  {
+    "UserName": "Boni",
+    "Password": "1234",
+    "Role": "Visitor"
+  },
+  {
+    "UserName": "Aldis",
+    "Password": "5648",
+    "Role": "Visitor"
+  },
+  {
+    "UserName": "Monika",
+    "Password": "7896",
+    "Role": "User"
+  },
+  {
+    "UserName": "Pal",
+    "Password": "3256",
+    "Role": "User"
+  },
+  {
+    "UserName": "Antonia",
+    "Password": "2589",
+    "Role": "Visitor"
+  },
+  {
+    "UserName": "szonja",
+    "Password": "1234",
+    "Role": "User"
+  },
+  {
+    "UserName": "papin",
+    "Password": "1234",
+    "Role": "Visitor"
+  }
+]

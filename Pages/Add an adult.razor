@@ -1,0 +1,68 @@
+﻿@page "/Add_an_adult"
+@using Assignment1.Data
+@using Models
+@inject IAdultService AdultService;
+@inject NavigationManager NavigationManager;
+
+<div>
+    <h3 class="ownHeader">Register someone</h3>
+
+    <EditForm Model="@newAdult" OnValidSubmit="@addNew">
+        <DataAnnotationsValidator/><ValidationSummary/>
+        <div class="form-group">
+            Id: <br/>
+            <InputNumber @bind-Value="newAdult.Id"></InputNumber>
+        </div>
+        <div>
+            First name:<br/>
+            <InputTextArea rows="1" @bind-Value="newAdult.FirstName"></InputTextArea>
+        </div>
+        <div>
+            Last name:<br/>
+            <InputTextArea rows="1" @bind-Value="newAdult.LastName"></InputTextArea>
+        </div>
+        <div>
+            Hair color:<br/>
+            <InputTextArea rows="1" @bind-Value="newAdult.HairColor"></InputTextArea>
+        </div>
+        <div>
+            Eye color:<br/>
+            <InputTextArea rows="1" @bind-Value="newAdult.EyeColor"></InputTextArea>
+        </div>
+        <div class="form-group">
+            Weight: <br/>
+            <InputNumber @bind-Value="newAdult.Weight"></InputNumber>
+        </div>
+        <div class="form-group">
+            Height: <br/>
+            <InputNumber @bind-Value="newAdult.Height"></InputNumber>
+        </div>
+        <div class="form-group">
+            Age: <br/>
+            <InputNumber @bind-Value="newAdult.Age"></InputNumber>
+        </div>
+        <div>
+            Sex:<br/>
+            <InputTextArea rows="1" @bind-Value="newAdult.Sex"></InputTextArea>
+        </div>
+
+        <p class="actions">
+            <button class="btn btn-outline-success" type="submit">Add</button>
+        </p>
+
+
+    </EditForm>
+
+</div>
+
+
+@code {
+    private Adult newAdult = new Adult();
+
+    private void addNew()
+    {
+        AdultService.AddAdult(newAdult);
+        NavigationManager.NavigateTo("/AdultsOverview");
+    }
+
+}
