@@ -11,7 +11,7 @@
         <DataAnnotationsValidator/><ValidationSummary/>
         <div class="form-group">
             Id: <br/>
-            <InputNumber @bind-Value="newAdult.Id" ></InputNumber>
+            <InputNumber @bind-Value="newAdult.Id"></InputNumber>
         </div>
         <div>
             First name:<br/>
@@ -20,6 +20,10 @@
         <div>
             Last name:<br/>
             <InputTextArea rows="1" @bind-Value="newAdult.LastName"></InputTextArea>
+        </div>
+        <div>
+            Job Title:<br/>
+            <InputTextArea rows="1" @bind-Value="newAdult.JobTitle"></InputTextArea>
         </div>
         <div>
             Hair color:<br/>

@@ -21,6 +21,7 @@ namespace Assignment1.Data
         {
             return adults;
         }
+        
 
         public void AddAdult(Adult adult)
         {
@@ -50,6 +51,34 @@ namespace Assignment1.Data
         public void EditAdult()
         {
             throw new System.NotImplementedException();
+        }
+
+        public IList<Adult> getMales()
+        {
+            IList<Adult> males = new List<Adult>();
+            foreach (var VARIABLE in adults)
+            {
+                if (VARIABLE.Sex.Equals("M"))
+                {
+                    males.Add(VARIABLE);
+                }
+            }
+
+            return males;
+        }
+
+        public IList<Adult> getFemales()
+        {
+            IList<Adult> females = new List<Adult>();
+            foreach (var VARIABLE in adults)
+            {
+                if (VARIABLE.Sex.Equals("F"))
+                {
+                    females.Add(VARIABLE);
+                }
+            }
+
+            return females;
         }
     }
 }

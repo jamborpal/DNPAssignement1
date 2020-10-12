@@ -9,5 +9,8 @@ namespace Assignment1.Data
         void AddAdult(Adult adult);
         void RemoveAdult(Adult toRemove);
         void EditAdult();
+        IList<Adult> getMales();
+        IList<Adult> getFemales();
+
     }
 }

@@ -4,11 +4,10 @@
 
 @inject IAdultService AdultService;
 <div class="background">
-    <h2 class="ownHeader">All the adults present in the system are displayed here</h2>
-    <h3 class="ownHeader">Search for adult </h3>
+    <h3 class="card-header-pills">All the adults present in the system are displayed here</h3>
     <p>
-        <br/><br/>By ID <input type="number" @oninput="@((arg) => FilterById(arg))" style="width: 50px"/>
-        By first name <input @oninput="@((arg) => FilterFirstName(arg))" style="width: 200px"/>
+        By ID <input type="number" @oninput="@((arg) => FilterById(arg))" style="width: 50px"/><br/><br/>
+        By first name <input @oninput="@((arg) => FilterFirstName(arg))" style="width: 200px"/><br/><br/>
         By last name <input @oninput="@((arg) => FilterLastName(arg))" style="width: 200px"/>
         <br/><br/>By sex
         <select class="form-control selectpicker" @onchange="@((arg => FilterSex(arg)))" style="width: 100px">
@@ -142,6 +141,10 @@
             else if (filterby.Equals("Female"))
             {
                 toShow = adults.Where(t => t.Sex.Equals("F")).ToList();
+            }
+            else if (filterby.Equals("Both"))
+            {
+                toShow = adults;
             }
         }
         else
