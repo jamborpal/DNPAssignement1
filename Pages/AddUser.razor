@@ -8,16 +8,16 @@
     <EditForm Model="@userNew" OnValidSubmit="@addNew">
         <div class="form-group">
             Username: <br/>
-            <InputTextArea rows="1" @bind-Value="userNew.UserName"></InputTextArea>
+            <InputTextArea rows="1" cols="50" @bind-Value="userNew.UserName"></InputTextArea>
         </div>
         <div>
             Password:<br/>
-            <InputTextArea rows="1" @bind-Value="userNew.Password"></InputTextArea>
+            <InputTextArea rows="1"cols="50" @bind-Value="userNew.Password"></InputTextArea>
         </div>
 
         <div>
             Role:<br/>
-            <InputTextArea rows="1" @bind-Value="userNew.Role"></InputTextArea>
+            <InputTextArea rows="1"cols="50" @bind-Value="userNew.Role"></InputTextArea>
         </div>
 
 

@@ -2,26 +2,26 @@
 
 html, body {
     font-family: monospace, serif;
-    background-color: #F3E9D2;
+    background-color: #dfdce3;
 
 }
 
 table, th, td {
-    border: 2px solid #114b5f;
+    border: 2px solid #4abdac;
     text-align: center;
-    background-color: #C6DABF;
+    background-color: white;
 }
 
 
 
 a, .btn-link {
-    color: #114b5f;
+    color: #fc4a1a;
 }
 
 .btn-primary {
-    color: #1A936F;
-    background-color: #114b5f;
-    border-color: #114b5f;
+    color: #f7b733;
+    background-color: #fc4a1a;
+    border-color: #fc4a1a;
 }
 
 app {
@@ -57,11 +57,11 @@ app {
 }
 
 .sidebar {
-    background-color: #88D498;
+    background-color: #4abdac;
 }
 
 .sidebar .top-row {
-    background-color: rgb(17, 75, 95);
+    background-color: rgb(74, 189, 172);
 
 }
 
@@ -91,7 +91,7 @@ app {
 }
 
 .sidebar .nav-item a {
-    color: #114b5f;
+    color: #f7b733;
     border-radius: 4px;
     height: 3rem;
     display: flex;
@@ -101,12 +101,12 @@ app {
 
 .sidebar .nav-item a.active {
     background-color: rgba(112, 112, 112, 0.25);
-    color: #114b5f;
+    color: #fc4a1a;
 }
 
 .sidebar .nav-item a:hover {
     background-color: rgba(255, 255, 255, 0.1);
-    color: #114b5f;
+    color: #fc4a1a;
 }
 
 .content {
@@ -263,8 +263,8 @@ h1 {
 }
 .block-cube .bg-right {
     position: absolute;
-    background: #114b5f;
-    background: #1A936F;
+    background: #4abdac;
+    background: #4abdac;
     top: -5px;
     z-index: 0;
     bottom: 5px;
