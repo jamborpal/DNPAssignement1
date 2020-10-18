@@ -106,3 +106,5 @@ C:\Users\jambo\RiderProjects\DNPAssignement1\obj\Debug\netcoreapp3.1\Assignment1
 C:\Users\jambo\RiderProjects\DNPAssignement1\obj\Debug\netcoreapp3.1\Assignment1.pdb
 C:\Users\jambo\RiderProjects\DNPAssignement1\obj\Debug\netcoreapp3.1\Assignment1.genruntimeconfig.cache
 C:\Users\jambo\RiderProjects\DNPAssignement1\obj\Debug\netcoreapp3.1\Assignment1.csproj.CopyComplete
+C:\Users\jambo\RiderProjects\DNPAssignement1\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Randomize.razor.g.cs
+C:\Users\jambo\RiderProjects\DNPAssignement1\obj\Debug\netcoreapp3.1\Razor\Pages\Randomize.razor.g.cs

@@ -1,0 +1,73 @@
+﻿@page "/Randomize"
+@using Models
+@using Assignment1.Data
+@inject NavigationManager NavigationManager;
+@inject IAdultService AdultService;
+<style>.card {
+           box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+           transition: 0.3s;
+           background-color: @color;
+           padding: 20px;
+           margin: 30px;
+       }
+       .card:hover {
+           
+           box-shadow: 0 4px 8px 0 rgba(0,0,0,0.8);
+       }
+       h3{padding-bottom: 20px }
+       </style>
+<h3>Randomize</h3>
+
+<div class="card">
+  
+    <h2>
+        <b>@adult.FirstName</b>
+        <b>@adult.LastName</b>
+    </h2>
+    <h3>
+        <b>@adult.JobTitle</b>
+    </h3>
+    <h4>
+        <b>@adult.Age</b>
+    </h4>
+
+    <b>Height: @adult.Height<br/>Weight: @adult.Weight<br/>Hair color: @adult.HairColor<br/>Eye color: @adult.EyeColor</b>
+    
+
+
+</div>
+<button class="btn btn-outline-light" @onclick="refresh">Randomize</button>
+
+@code {
+    IList<Adult> adults = new List<Adult>();
+    Adult adult = new Adult();
+    string color = "#000000";
+
+    protected override async Task OnInitializedAsync()
+    {
+        adults = AdultService.GetAdults();
+        adult = Randomizing();
+        switch (adult.Sex)
+        {
+            case "M":
+                color = "#87cefa";
+                break;
+            case "F":
+                color = "#ffbcd9";
+                break;
+        }
+    }
+
+    private Adult Randomizing()
+    {
+        var random = new Random();
+        int index = random.Next(adults.Count);
+        return adults[index];
+    }
+
+    private void refresh()
+    {
+        NavigationManager.NavigateTo("/Randomize",true);
+    }
+
+}

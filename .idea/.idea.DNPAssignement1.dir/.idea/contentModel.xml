@@ -44,6 +44,7 @@
         <e p="Error.cshtml" t="Include" />
         <e p="Index.razor" t="Include" />
         <e p="Login.razor" t="Include" />
+        <e p="Randomize.razor" t="Include" />
       </e>
       <e p="Program.cs" t="Include" />
       <e p="Properties" t="Include">

@@ -11,7 +11,7 @@
         By last name <input @oninput="@((arg) => FilterLastName(arg))" style="width: 200px"/>
         <br/><br/>By sex
         <select class="form-control selectpicker" @onchange="@((arg => FilterSex(arg)))" style="width: 100px">
-            <option>Both</option>
+            <option>All</option>
             <option>Female</option>
             <option>Male</option>
         </select>
@@ -142,7 +142,7 @@
             {
                 toShow = adults.Where(t => t.Sex.Equals("F")).ToList();
             }
-            else if (filterby.Equals("Both"))
+            else if (filterby.Equals("All"))
             {
                 toShow = adults;
             }
